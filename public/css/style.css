@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Pacifico', cursive;
+}
+/* Navbar Start */
+#navbar{
+    background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ee3a3a;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+/* home section start*/
+.home{
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(2, 2, 2, 0.342),rgba(0, 0, 0, 0)), url(./imagenes/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 39px;
+    font-weight: 500;
+    text-shadow: 2px 5px 1px rgb(0, 0, 0);
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 400;
+    text-shadow: 3px 5px 1px rgb(0, 0, 0);
+    margin-top: 5px;
+
+}
+.changecontent::after{
+    content: ' ';
+    color: orange;
+    text-shadow: 2px 4px 1px rgb(0, 0, 0);
+    animation: changetext 30s infinite linear;
+}
+@keyframes changetext{
+    0%{content: " Machu Picchu ";}
+    10%{content: " Kotosh ";}
+    20%{content: " Casa de la Perricholi ";}
+    30%{content: " Plaza de Armas de Huánuco ";}
+    40%{content: " Mayantuyacu ";}
+    50%{content: " Iglesia de San Francisco ";}
+    60%{content: " Lago Titicaca ";}
+    70%{content: " Catedral de Huánuco ";}
+    80%{content: " Yarowilca ";}
+    90%{content: " Camino Inca ";}
+    100%{content:" Cueva de las lechuzas ";}
+    110%{content:" La Ducha del Diablo ";}
+}
+
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    text-shadow: 2px 4px 1px rgb(0, 0, 0);
+    margin-bottom: 30px;
+    margin-top: 5px;
+    
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: rgb(14, 112, 136);
+    color: white;
+}
+@media (max-whidth:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-whidth:450px){
+    .home .content h5{
+        font-size: 20px; 
+    }
+    .home .content h1{
+        font-size: 30px;
+    }
+    .home .content p{
+        font-size: 10px;
+    }
+}
+/* home section end*/
+
+/* section book start */
+.book{
+    background: rgba(248, 248, 248, 0.829);
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 3px 1px rgb(0, 0, 0);
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: brown;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 15px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 6px -4px rgb(141, 74, 19);
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 5px 5px 6px -4px rgb(141, 74, 19);
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 500;
+    background: orange;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+        }
+}
+/* section book end */
+
+
+
+/* section paqutes start */
+.main-text h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow:  0px 1px 1px black;
+}
+.main-text h1 span{
+    color:#ffa500;
+}
+
+/* section paqutes end */
